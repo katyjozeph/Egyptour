@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Calistoga&family=Margarine&display=swap" rel="stylesheet">
+    <title>ALEXANDRIA</title>
+</head>
+<body>
+    <div class="scroltop">
+        <div class="inner">
+            <a href="#" class="dark"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    </div>
+    <nav class="navbar sticky-top bg-body-secondary bg-opacity-50">
+        <div class="container">
+    <img src="./photos/Egyp our2.png" alt="" width="100px">
+        <div class="icons">
+            <a href=""><i class="fa fa-heart fa-xl"style="padding-right: 20px;color: #000000;"></i></a>
+            <a href=""><i class="fa-solid fa-circle-user fa-xl" style="color: #000000; padding-right: 20px;"></i></a>
+            <a href=""><i class="fa-regular fa-circle-question fa-xl" style="color: #000000;"></i></a>
+        </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+                <div class="card text-bg-dark">
+                    <img src="./photo's alex/pexels-rewan-ahmed-17408308.jpg" class="card-img" alt="..." style="opacity: 80%;">
+                    <div class="card-img-overlay" style="position: absolute;">
+                    <h1 class="card-title" style="font-size: 70px; position:relative; top: 280px;margin-left: 100px; font-family: Bungee Inline;">ALEXANDRIA..</h1>
+                    <p class="card-text"  style="font-size: 42px;  position:relative; top: 270px;margin-left: 100px;font-family: Crimson Pro;">Bride of the Mediterranean</p>
+                    </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="position: relative;">
+                <p class=" bg-transparent" style="font-family: Margarine; font-size: 35px; ">Let's explore our history </p>
+        </div>
+    </div>
+    <hr class="border border-secondary m-1">
+    <div class="container d-flex justify-content-between mt-5 mb-5 ">
+            <div class="child1">
+                <p class="h1">Historical Sites</p>
+            <p class="h5">Gold is made for kings and pharaohs</p>
+            </div>
+            <div class="child2">
+                    <div class="input-group">
+                        <input type="search" class="form-control" id="search-input" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" onkeyup="search()">
+            </div>
+            </div>
+            </div>
+            <div id="searchResults">No Result Found</div>
+            <div id="historical"></div>
+    <!-- <!-- <div class="container d-flex justify-content-between mb-4">
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/ff5f21b933949fdda87630649c8d8b6c.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Citadel of Qaitbay</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/cebf43ca61e8f7aa37943c2c037f4873.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Roman Amphitheatre</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/eed587d9e4e0148391771cc723982d7b.jpeg" class="card-img-top" alt="..." height="90%">
+            <div class="card-body text-center">
+            <h5 class="card-title">Bibliotheca Alex</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-between mb-4">
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/20bb27d7d5d3fe77a5e20c66422bde8b.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Stanley Bridge</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/13005bca4db0ed06b16007909e893a45.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Pompey's Pillar</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/c2f031fafa79014ff549faa4dd411f8b.jpeg" class="card-img-top" alt="..." >
+            <div class="card-body text-center">
+            <h5 class="card-title">Montazah Mosque</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-between mb-4">
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/6d0756f4b5e008fd9e84d21f84db4163.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Antoiadis Garden</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/81e94423efc7ebd8d5f7171e50183ada.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Church of Bishop Athanasius 
+                Apostolic</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="card crd" style="width: 20rem;">
+            <img src="./photo's alex/870d442f0764e3e95c88948916ea3221.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+            <h5 class="card-title">Tombs of Kom el-Shuqafa</h5>
+            <div class="left" style="margin-left: 45px;">
+                <a href=""><button class="btn" id="butn">Explore</button></a>
+            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+            </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container d-flex justify-content-between mt-5 mb-5 ">
+        <div class="child1">
+            <p class="h1">Museums & Exhibitions</p>
+        <p class="h5">Explore our ancient landscapes...</p>
+        </div>
+        <div class="child2">
+                <div class="input-group">
+                    <input type="search" class="form-control" id="search-input2" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" onkeyup="search2()">
+        </div>
+        </div>
+        </div>
+        <div id="searchResults2">No Result Found</div>
+        <div id="museum"></div>
+        <!-- <div class="container d-flex justify-content-between mb-4">
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/c5b39339e73bab5fb19b222ca455612d.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Alexandria museum</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/f8dab4257b7cd1c748c891940c6d3234.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Graeco-Roman Museum</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/e3d932dc289ec4f54775ecb5b3efd5a5.jpeg " class="card-img-top" alt="..." >
+                <div class="card-body text-center">
+                <h5 class="card-title">Alexandria Art Museum</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between mb-4">
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/0ebae0ab25e4022b479ec7383b83f1e6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Royal Jewelry Museum</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/41e076bad54b28d839c05a3d42142def.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Cavafy Museum</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/98e26f638464623fae5cb31b490b4861.jpeg" class="card-img-top" alt="..." >
+                <div class="card-body text-center">
+                <h5 class="card-title">Montazah Palace</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-evenly mb-4">
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/0133ad656680e28cec65b60f94884898.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Ras El Tin Palace</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="card crd" style="width: 20rem;">
+                <img src="./photo's alex/ce5a8789f9210e120e95a9fe007774a6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">Cleopatra’s Palace</h5>
+                <div class="left" style="margin-left: 45px;">
+                    <a href=""><button class="btn" id="butn">Explore</button></a>
+                <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container d-flex justify-content-between mt-5 mb-5 ">
+            <div class="child1">
+                <p class="h1">Hotels & Resorts</p>
+            <p class="h5">Find your next stay...</p>
+            </div>
+            <div class="child2">
+                    <div class="input-group">
+                        <input type="search" class="form-control" id="search-input3" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" onkeyup="search3()">
+            </div>
+            </div>
+            </div>
+            <div id="searchResults3">No Result Found</div>
+            <div id="hotels"></div>
+            <!-- <div class="container d-flex justify-content-between mb-4"> 
+                 <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/b6e71be6f2a2a14e2435c69311b87e04.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Hilton Alexandria</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/ea6bdd4eb6ac87be74b491cd301d469e.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Hampton Inn Alexandria</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/fed607bd7549878769100aba40f31c25.jpeg" class="card-img-top" alt="..." >
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Helnan royal hotel</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="container d-flex justify-content-between mb-4">
+                <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/032a7862839f5b47594ea675834734f7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Plaza hotel</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/29e19e2608eb4710cb1e4c405f3e66fc.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Tolip hotel</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 20rem;">
+                    <img src="./photo's alex/634076d11f4fc9d1aab89b2e8d35c528.jpeg" class="card-img-top" alt="..." >
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Hilton green plaza</h5>
+                    <div class="left" style="margin-left: 45px;">
+                        <a href=""><button class="btn" id="butn">Explore</button></a>
+                    <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                    </div>
+                    </div>
+                </div> 
+            </div> 
+-->
+            <div class="container d-flex justify-content-between mt-5 mb-5 ">
+                <div class="child1">
+                    <p class="h1">vibes & Restaurants</p>
+                <p class="h5">You deserve happiness!</p>
+                </div>
+                <div class="child2">
+                        <div class="input-group">
+                            <input type="search" class="form-control" id="search-input4" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" onkeyup="search4()">
+                </div> 
+                </div>
+                </div>
+                <div id="searchResults4">No Result Found</div>
+                <div id="Restaurants"></div>
+                <!-- <div class="container d-flex justify-content-between mb-4">
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/71570cc30b6ef767e06757c3d25b1ff4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Pablo cafe& restaurant</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/bdbc96cbcf9c2fd68fea2cf8676334d2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Old street cafe & restaurant</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/031fb1223b3cef9f7df2f0be54002525.jpeg" class="card-img-top" alt="..." >
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Wave cafe</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-between mb-4">
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/5e99db894ac74edc868a8fb2319899f7.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Cafe de la paix</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/8e5884ffbbd25d30c9608f33b8ed5f02.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Fish Market Restaurant</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/4b46997e7739c1d95fa8bef3afa1daea.jpeg" class="card-img-top" alt="..." >
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Abou El Sid</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-between mb-4">
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/daf74901d316b8095111e497e86f507e.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Greek Club</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                            <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/3e7b895ecae0d3eaaa028a4dadd983b9.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Café Azur</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d; margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card crd" style="width: 20rem;">
+                        <img src="./photo's alex/2c9de771944cf89c1751a74a2df7b2f9.jpeg" class="card-img-top" alt="..." >
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Trianon</h5>
+                        <div class="left" style="margin-left: 45px;">
+                            <a href=""><button class="btn" id="butn">Explore</button></a>
+                        <a href=""><i class="fa-brands fa-gratipay fa-2xl" style="color: #ffb24d;  margin-left: 20px;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="container d-flex justify-content-between">
+                    <div class="child1 me-5" style="width: 60%;">
+                        <h1 style="color: #C39126; text-align: center;">Become VIP!</h1>
+                        <p style="color: #C39126;text-align: center;font-size: 30px;">Enjoy priority access to new products, services, and events before they are made available to the general public.</p>
+                        <button style="background:#C39126 ;color:white; padding:10px;border-radius: 15px;border-color: #C39126;margin-left: 40%;">Upgrade now!</button>
+                    </div>
+                    <div class="child2">
+                        <img src="./Discount-cuate.png" alt="" width="300px" height="300px">
+                    </div>
+                </div>
+                <div class="container-fluid d-flex justify-content-between" style="background-color: #C39126; padding: 40px;">
+                    <div class="child11 me-5"style="width: 50%;">
+                        <img src="./Sunny day-cuate.png" alt=""  width="300px" height="300px">
+                    </div>
+                    <div class="child22">
+                        <h1 style="color: white; text-align: center;font-size: 50px;">Customized Experiences</h1>
+                        <p style="color: white; text-align: center;font-size: 25px;">Tailor your experience with us according to your preferences and interests, ensuring that every interaction with our brand is personalized and memorable.</p>
+                        <button style="background:#98610E ;color:white; padding:20px;border-radius: 15px;border-color: #C39126;margin-left: 40%;">Subscribe now</button>
+                    </div>
+                </div>
+                <div class="container" style="text-align: center;">
+                    <img src="./photos/Egyp our2.png" alt="" width="170px" style="margin-right: 30px;">
+                        <ul>
+                            <li> <a href="" class="light">Home</a></li>
+                            <li> <a href="" class="light">Ask Questions</a></li>
+                            <li> <a href="" class="light">About Us</a></li>
+                        </ul>
+                    <p style="font-weight: 600; color: #C39126;">For better experience , download our mobile app</p>
+                    <p style="color: #C39126;">Download the app by clicking the link below :</p>
+                    <div class="parent d-flex justify-content-center">
+                        <div class="child1">
+                            <img src="./photos/62907e92d450eba80453cde440ebaa2a.png" alt="" width="150px">
+                        </div>
+                        <div class="child2">
+                            <img src="./photos/bc4ddba2d2248ba316dce480f313b27a.png" alt="" width="150px" style="margin-top: 7px;">
+                        </div>
+                    </div>
+                    <hr width="50%" style="margin-left: 25%;">
+                    <p style="color: #C39126;">All copyrights are reserved by 2024 seniors</p>
+                </div>
+                <script src="./scroll.js"></script>
+                <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+                <script src="./script.js"></script>
+</body>
+</html>
